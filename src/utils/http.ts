@@ -10,7 +10,7 @@ interface RequestOptions {
   }
 
 //网络请求拦截器
-const interceptor = function (chain:any) {
+const interceptor = function (chain: Taro.Chain) {
   const requestParams = chain.requestParams
   let token = Taro.getStorageSync('TOKEN')//拿到本地缓存中存的token
   requestParams.header = {
@@ -22,13 +22,17 @@ const interceptor = function (chain:any) {
 
 Taro.addInterceptor(interceptor)
 
-const request = async (method:string, url:string, params:RequestOptions) => {
+const request = async (method:string, url:string, params?:RequestOptions) => {
   // 由于post请求时习惯性query参数使用params，body参数使用data，而taro只有data参数，使用contentType作为区分，因此此处需要做一个判断
   let contentType = params?.data ? 'application/json' : 'application/x-www-form-urlencoded';
   if (params) contentType = params?.headers?.contentType || contentType;
+  let requestUrl = apiConfig.baseUrl + url;
+  if(url.startsWith('http') || url.startsWith('https')){
+    requestUrl = url;
+  } 
   const option:Taro.request.Option = {
     method: method as Taro.request.Option['method'],
-    url: apiConfig.baseUrl + url,
+    url: requestUrl,
     data: params && (params?.data || params?.params),
     header: {
       'content-type': contentType,
@@ -52,19 +56,19 @@ const request = async (method:string, url:string, params:RequestOptions) => {
 }
 
 export default {
-  get: (url:string, config:RequestOptions) => {
+  get: (url:string, config?:RequestOptions) => {
     return request('GET', url, config);
   },
-  post: (url:string, config:RequestOptions) => {
+  post: (url:string, config?:RequestOptions) => {
     return request('POST', url, config);
   },
-  put: (url:string, config:RequestOptions) => {
+  put: (url:string, config?:RequestOptions) => {
     return request('PUT', url, config);
   },
-  delete: (url:string, config:RequestOptions) => {
+  delete: (url:string, config?:RequestOptions) => {
     return request('DELETE', url, config);
   },
-  patch: (url:string, config:RequestOptions) => {
+  patch: (url:string, config?:RequestOptions) => {
     return request('PATCH', url, config);
   },
 }
