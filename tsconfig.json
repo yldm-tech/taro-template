@@ -25,6 +25,7 @@
       "@/src/*": ["./src/*"],
       "@/stores/*": ["./src/stores/*"],
       "@/components/*": ["./src/components/*"],
+      "@/services/*": ["./src/services/*"],
       "@/utils/*": ["./src/utils/*"],
       "@/assets/*": ["./src/assets/*"],
       "@/package": ["./package.json"],

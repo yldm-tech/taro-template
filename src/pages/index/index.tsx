@@ -1,13 +1,13 @@
 import { View } from '@tarojs/components'
 import { Button } from "@nutui/nutui-react-taro"
+import { fetchDemo } from '@/services/index.service'
 import { useBearStore } from '@/stores/index'
-import http from '@/utils/http'
 import './index.scss'
 
 function Index() {
   return (
     <View className="nutui-react-demo">
-      <View className="index text-xl text-blue-400">
+      <View className="index text-sm text-blue-400">
         欢迎使用 NutUI React 开发 Taro 多端项目
       </View>
       <BearCounter />
@@ -16,14 +16,9 @@ function Index() {
   )
 }
 
-const handleFetch = async () => {
-  const res = await http.get('https://httpbin.org/ip')
-  console.log('res', res.origin)
-}
-
 
 function BearCounter() {
-  handleFetch()
+  fetchDemo()
   const bears = useBearStore((state: any) => state.bears)
   return <h1>{bears} around here ...</h1>
 }

@@ -1,5 +1,4 @@
 import Taro from '@tarojs/taro';
-import apiConfig from './api.config'
 
 interface RequestOptions {
     data?: any;
@@ -26,7 +25,7 @@ const request = async (method:string, url:string, params?:RequestOptions) => {
   // 由于post请求时习惯性query参数使用params，body参数使用data，而taro只有data参数，使用contentType作为区分，因此此处需要做一个判断
   let contentType = params?.data ? 'application/json' : 'application/x-www-form-urlencoded';
   if (params) contentType = params?.headers?.contentType || contentType;
-  let requestUrl = apiConfig.baseUrl + url;
+  let requestUrl = process.env.TARO_APP_API + url;
   if(url.startsWith('http') || url.startsWith('https')){
     requestUrl = url;
   } 

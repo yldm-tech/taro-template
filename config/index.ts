@@ -16,6 +16,7 @@ const config = {
   alias: {
     "@/": path.resolve(__dirname, "..", "src"),
     "@/stores": path.resolve(__dirname, "..", "src/stores"),
+    "@/services": path.resolve(__dirname, "..", "src/services"),
     "@/components": path.resolve(__dirname, "..", "src/components"),
     "@/assets": path.resolve(__dirname, "..", "src/assets"),
     "@/utils": path.resolve(__dirname, "..", "src/utils"),
@@ -30,6 +31,9 @@ const config = {
   compiler: {
     type: "webpack5",
     prebundle: { enable: false },
+  },
+  cache:{
+    enable: true
   },
   mini: {
     postcss: {
