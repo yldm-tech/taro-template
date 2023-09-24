@@ -1,3 +1,4 @@
+import path from "path";
 const config = {
   projectName: "taro-template",
   date: "2023-9-24",
@@ -12,6 +13,15 @@ const config = {
   outputRoot: "dist",
   plugins: ["@tarojs/plugin-html", "taro-plugin-tailwind"],
   defineConstants: {},
+  alias: {
+    "@/": path.resolve(__dirname, "..", "src"),
+    "@/stores": path.resolve(__dirname, "..", "src/stores"),
+    "@/components": path.resolve(__dirname, "..", "src/components"),
+    "@/assets": path.resolve(__dirname, "..", "src/assets"),
+    "@/utils": path.resolve(__dirname, "..", "src/utils"),
+    "@/package": path.resolve(__dirname, "..", "package.json"),
+    "@/project": path.resolve(__dirname, "..", "project.config.json"),
+  },
   copy: {
     patterns: [],
     options: {},
