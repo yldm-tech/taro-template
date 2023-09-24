@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     NODE_ENV: '"production"',
-    TARO_APP_API:'"https://api.yldm.tech"'
+    TARO_APP_API:'"https://api.yldm.cn"'
   },
   defineConstants: {
   },
