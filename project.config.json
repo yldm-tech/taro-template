@@ -4,12 +4,12 @@
   "description": "taro template",
   "appid": "wx9b0cb19215e62157",
   "setting": {
-    "urlCheck": true,
-    "es6": false,
-    "enhance": false,
-    "compileHotReLoad": false,
-    "postcss": false,
-    "minified": false
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "compileHotReLoad": true,
+    "postcss": true,
+    "minified": true
   },
   "compileType": "miniprogram"
 }

@@ -1,9 +1,24 @@
 import { View } from '@tarojs/components'
-import { useCountStore } from '@/stores/count'
+import { CountActions, CountState, useCountStore } from '@/stores/count.store'
 import { Button } from "@nutui/nutui-react-taro"
 import './index.scss'
 
 function Index() {
+  const { bears, increasePopulation } = useCountStore((state: CountState & CountActions) => state)
+
+  function Counter() {
+    return <h1>{bears} around here ...</h1>
+  }
+
+  function Controls() {
+    return <View className="index">
+      <Button onClick={increasePopulation} type="primary" className="btn">
+        +1
+      </Button>
+    </View>
+  }
+
+
   return (
     <View className="nutui-react-demo">
       <Counter />
@@ -12,18 +27,6 @@ function Index() {
   )
 }
 
-function Counter() {
-  const bears = useCountStore((state: any) => state.bears)
-  return <h1>{bears} around here ...</h1>
-}
 
-function Controls() {
-  const increasePopulation = useCountStore((state: any) => state.increasePopulation)
-  return <View className="index">
-    <Button onClick={increasePopulation} type="primary" className="btn">
-      +1
-    </Button>
-  </View>
-}
 
 export default Index
