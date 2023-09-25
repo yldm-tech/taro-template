@@ -13,7 +13,7 @@
     "build:swan": "NODE_ENV=production taro build --type swan",
     "build:alipay": "NODE_ENV=production taro build --type alipay",
     "build:tt": "NODE_ENV=production taro build --type tt",
-    "build:h5": "NODE_ENV=production taro build --type h5",
+    "build:h5": "taro build --type h5",
     "build:rn": "NODE_ENV=production taro build --type rn",
     "build:qq": "NODE_ENV=production taro build --type qq",
     "build:jd": "NODE_ENV=production taro build --type jd",

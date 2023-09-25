@@ -9,7 +9,13 @@
     "enhance": true,
     "compileHotReLoad": true,
     "postcss": true,
-    "minified": true
+    "minified": true,
+    "newFeature": true,
+		"autoAudits": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": false,
+		"scopeDataCheck": false,
+		"useCompilerModule": false
   },
   "compileType": "miniprogram"
 }

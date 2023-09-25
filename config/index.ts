@@ -11,9 +11,13 @@ const config = {
     375: 2 / 1,
   },
   sourceRoot: 'src',
-  outputRoot: 'dist',
+  outputRoot: `dist/${process.env.TARO_ENV}`,
   plugins: ['@tarojs/plugin-html', 'taro-plugin-tailwind'],
-  defineConstants: {},
+  defineConstants: {
+    IS_H5: process.env.TARO_ENV === 'h5',
+    IS_RN: process.env.TARO_ENV === 'rn',
+    IS_WEAPP: process.env.TARO_ENV === 'weapp'
+  },
   alias: {
     '@/': path.resolve(__dirname, '..', 'src'),
     '@/stores': path.resolve(__dirname, '..', 'src/stores'),
@@ -61,7 +65,7 @@ const config = {
   },
   h5: {
     publicPath: '/',
-    staticDirectory: 'static',
+    staticDirectory: '/src/assets',
     esnextModules: ['taro-ui','nutui-react-taro','nutui-react'],
     postcss: {
       pxtransform: {
@@ -75,7 +79,7 @@ const config = {
         config: {},
       },
       cssModules: {
-        enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
+        enable: true, // 默认为 false，如需使用 css modules 功能，则设为 true
         config: {
           namingPattern: 'module', // 转换模式，取值为 global/module
           generateScopedName: '[name]__[local]___[hash:base64:5]',
@@ -83,6 +87,14 @@ const config = {
       },
     },
   },
+  rn: {
+    output: {
+      ios: 'ios/main.jsbundle',
+      iosAssetsDest: 'ios',
+      android: 'android/index.android.bundle',
+      androidAssetsDest: 'android'
+    },
+  }
 }
 
 module.exports = function (merge) {
