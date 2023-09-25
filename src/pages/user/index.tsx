@@ -9,6 +9,7 @@ import React from 'react'
 const UserPage = () => {
   return (
     <View className="my">
+      {/* header */}
       <View className="header pt-20 pb-5 flex items-center">
         <View>
           <Avatar size='100' className="mx-5" src={AvatarPhoto} />
@@ -22,7 +23,9 @@ const UserPage = () => {
           </View>
         </View>
       </View>
+      {/* items */}
       <View className="mr-5">
+
 
       </View>
     </View>
