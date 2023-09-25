@@ -37,6 +37,7 @@
   "author": "Evan<evan@yldm.tech>",
   "dependencies": {
     "@babel/runtime": "^7.22.15",
+    "@codler/react-native-keyboard-aware-scroll-view": "^2.0.1",
     "@nutui/nutui-react-taro": "^2.0.18",
     "@tarojs/components": "3.6.17",
     "@tarojs/helper": "3.6.17",
