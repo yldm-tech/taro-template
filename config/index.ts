@@ -1,7 +1,8 @@
-import path from "path";
+import path from 'path'
+
 const config = {
-  projectName: "taro-template",
-  date: "2023-9-24",
+  projectName: 'taro-template',
+  date: '2023-9-24',
   designWidth: 375,
   deviceRatio: {
     640: 2.34 / 2,
@@ -9,27 +10,27 @@ const config = {
     828: 1.81 / 2,
     375: 2 / 1,
   },
-  sourceRoot: "src",
-  outputRoot: "dist",
-  plugins: ["@tarojs/plugin-html", "taro-plugin-tailwind"],
+  sourceRoot: 'src',
+  outputRoot: 'dist',
+  plugins: ['@tarojs/plugin-html', 'taro-plugin-tailwind'],
   defineConstants: {},
   alias: {
-    "@/": path.resolve(__dirname, "..", "src"),
-    "@/stores": path.resolve(__dirname, "..", "src/stores"),
-    "@/services": path.resolve(__dirname, "..", "src/services"),
-    "@/components": path.resolve(__dirname, "..", "src/components"),
-    "@/assets": path.resolve(__dirname, "..", "src/assets"),
-    "@/utils": path.resolve(__dirname, "..", "src/utils"),
-    "@/package": path.resolve(__dirname, "..", "package.json"),
-    "@/project": path.resolve(__dirname, "..", "project.config.json"),
+    '@/': path.resolve(__dirname, '..', 'src'),
+    '@/stores': path.resolve(__dirname, '..', 'src/stores'),
+    '@/services': path.resolve(__dirname, '..', 'src/services'),
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/assets': path.resolve(__dirname, '..', 'src/assets'),
+    '@/utils': path.resolve(__dirname, '..', 'src/utils'),
+    '@/package': path.resolve(__dirname, '..', 'package.json'),
+    '@/project': path.resolve(__dirname, '..', 'project.config.json'),
   },
   copy: {
     patterns: [],
     options: {},
   },
-  framework: "react",
+  framework: 'react',
   compiler: {
-    type: "webpack5",
+    type: 'webpack5',
     prebundle: { enable: false },
   },
   cache:{
@@ -40,7 +41,7 @@ const config = {
       pxtransform: {
         enable: true,
         config: {
-          selectorBlackList: ["nut-"],
+          selectorBlackList: ['nut-'],
         },
       },
       url: {
@@ -52,21 +53,21 @@ const config = {
       cssModules: {
         enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
         config: {
-          namingPattern: "module", // 转换模式，取值为 global/module
-          generateScopedName: "[name]__[local]___[hash:base64:5]",
+          namingPattern: 'module', // 转换模式，取值为 global/module
+          generateScopedName: '[name]__[local]___[hash:base64:5]',
         },
       },
     },
   },
   h5: {
-    publicPath: "/",
-    staticDirectory: "static",
+    publicPath: '/',
+    staticDirectory: 'static',
     esnextModules: ['taro-ui','nutui-react-taro','nutui-react'],
     postcss: {
       pxtransform: {
         enable: true,
         config: {
-          selectorBlackList: ["nut-"],
+          selectorBlackList: ['nut-'],
         },
       },
       autoprefixer: {
@@ -76,17 +77,17 @@ const config = {
       cssModules: {
         enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
         config: {
-          namingPattern: "module", // 转换模式，取值为 global/module
-          generateScopedName: "[name]__[local]___[hash:base64:5]",
+          namingPattern: 'module', // 转换模式，取值为 global/module
+          generateScopedName: '[name]__[local]___[hash:base64:5]',
         },
       },
     },
   },
-};
+}
 
 module.exports = function (merge) {
-  if (process.env.NODE_ENV === "development") {
-    return merge({}, config, require("./dev"));
+  if (process.env.NODE_ENV === 'development') {
+    return merge({}, config, require('./dev'))
   }
-  return merge({}, config, require("./prod"));
-};
+  return merge({}, config, require('./prod'))
+}

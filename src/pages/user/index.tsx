@@ -1,9 +1,11 @@
-import { View } from '@tarojs/components'
-import { Avatar } from "@nutui/nutui-react-taro"
-import AvatarPhoto from '@/assets/images/user_default.png'
 import './index.scss'
 
-function Index() {
+import { Avatar } from '@nutui/nutui-react-taro'
+import { View } from '@tarojs/components'
+
+import AvatarPhoto from '@/assets/images/user_default.png'
+
+const UserPage = () => {
   return (
     <View className="my">
       <View className="header pt-20 pb-5 flex items-center">
@@ -26,4 +28,4 @@ function Index() {
   )
 }
 
-export default Index
+export default UserPage

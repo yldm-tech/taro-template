@@ -1,7 +1,8 @@
-import { View } from '@tarojs/components'
 import './index.scss'
 
-function Index() {
+import { View } from '@tarojs/components'
+
+const CategoryPage = () => {
   return (
     <View className="nutui-react-demo">
       <View className="index">
@@ -11,4 +12,4 @@ function Index() {
   )
 }
 
-export default Index
+export default CategoryPage

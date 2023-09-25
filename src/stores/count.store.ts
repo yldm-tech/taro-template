@@ -1,13 +1,13 @@
+import { mountStoreDevtool } from 'simple-zustand-devtools'
 import { create } from 'zustand'
-import { mountStoreDevtool } from 'simple-zustand-devtools';
 
 export type CountState = {
-  bears: number;
+  bears: number
 }
 
 export type CountActions = {
-  increasePopulation: () => void;
-  removeAllBears: () => void;
+  increasePopulation: () => void
+  removeAllBears: () => void
 }
 
 export const useCountStore = create<CountState & CountActions>((set) => ({
@@ -18,5 +18,5 @@ export const useCountStore = create<CountState & CountActions>((set) => ({
 
 
 if (process.env.NODE_ENV === 'development') {
-  mountStoreDevtool('count', useCountStore);
+  mountStoreDevtool('count', useCountStore)
 }

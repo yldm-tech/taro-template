@@ -4,23 +4,23 @@ module.exports = {
   compact: false,
   presets: [
     [
-      "taro",
+      'taro',
       {
-        framework: "react",
+        framework: 'react',
         ts: true,
       },
     ],
   ],
   plugins: [
     [
-      "import",
+      'import',
       {
-        libraryName: "@nutui/nutui-react-taro",
-        libraryDirectory: "dist/esm",
-        style: "css",
+        libraryName: '@nutui/nutui-react-taro',
+        libraryDirectory: 'dist/esm',
+        style: 'css',
         camel2DashComponentName: false,
       },
-      "nutui-react-taro",
+      'nutui-react-taro',
     ],
   ],
-};
+}

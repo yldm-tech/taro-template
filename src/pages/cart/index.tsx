@@ -1,16 +1,18 @@
-import { View } from '@tarojs/components'
-import { CountActions, CountState, useCountStore } from '@/stores/count.store'
-import { Button } from "@nutui/nutui-react-taro"
 import './index.scss'
 
-function Index() {
+import { Button } from '@nutui/nutui-react-taro'
+import { View } from '@tarojs/components'
+
+import { CountActions, CountState, useCountStore } from '@/stores/count.store'
+
+const CartPage = () => {
   const { bears, increasePopulation } = useCountStore((state: CountState & CountActions) => state)
 
-  function Counter() {
+  const Counter = () => {
     return <h1>{bears} around here ...</h1>
   }
 
-  function Controls() {
+  const Controls = () => {
     return <View className="index">
       <Button onClick={increasePopulation} type="primary" className="btn">
         +1
@@ -29,4 +31,4 @@ function Index() {
 
 
 
-export default Index
+export default CartPage

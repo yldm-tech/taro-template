@@ -1,9 +1,11 @@
-import { ReactElement, useEffect } from 'react'
-import { useDidShow, useDidHide } from '@tarojs/taro'
 // 全局样式
 import './app.css'
 
-function App(props: { children: ReactElement }) {
+import { useDidHide,useDidShow } from '@tarojs/taro'
+import { ReactElement, useEffect } from 'react'
+
+
+function App (props: { children: ReactElement }) {
   // 可以使用所有的 React Hooks
   useEffect(() => {})
 

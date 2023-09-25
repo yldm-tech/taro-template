@@ -1,16 +1,17 @@
-import { View } from '@tarojs/components'
-import { Button } from "@nutui/nutui-react-taro"
-import { fetchDemo } from '@/services/index.service'
-import { Todo, useTodoStore, TodoState, TodoActions } from '@/stores/todo.store'
 import './index.scss'
+
+import { Button } from '@nutui/nutui-react-taro'
+import { View } from '@tarojs/components'
 import { useEffect } from 'react'
 
-function Index() {
+import { fetchDemo } from '@/services/index.service'
+import { Todo, TodoActions, TodoState, useTodoStore } from '@/stores/todo.store'
+
+const IndexPage = () => {
   const { todoList, initialize, addTodo, removeAllTodo } = useTodoStore((state: TodoState & TodoActions) => state)
   useEffect(() => {
-    console.log('useEffect')
     initialize()
-  }, [])
+  })
 
 
   const TodoComponent = () => {
@@ -25,11 +26,11 @@ function Index() {
   }
 
   const Controls = () => {
-    const id = todoList.length + 1;
+    const id = todoList.length + 1
     return <View className="index flex flex-col">
       <Button onClick={() => {
         addTodo({
-          id: id,
+          id,
           content: `todo ${id}`
         })
       }} type="primary" className="btn block w-full">
@@ -52,5 +53,5 @@ function Index() {
   )
 }
 
-export default Index
+export default IndexPage
 
