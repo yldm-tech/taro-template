@@ -1,27 +1,6 @@
-.nutui-react-demo {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.index {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.title {
-  display: block;
-  margin: 20px 0;
-  font-weight: 600;
-}
-
-.btn {
-  display: block;
-  width: 200px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+.my {
+  background-image: url("https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_bg.png");
+  background-size: 40%;
+  background-origin: border-box;
+  background-repeat: no-repeat;
 }
