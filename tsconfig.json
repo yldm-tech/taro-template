@@ -26,6 +26,7 @@
       "@/src/*": ["./src/*"],
       "@/stores/*": ["./src/stores/*"],
       "@/components/*": ["./src/components/*"],
+      "@/constants/*": ["./src/constants/*"],
       "@/services/*": ["./src/services/*"],
       "@/utils/*": ["./src/utils/*"],
       "@/assets/*": ["./src/assets/*"],

@@ -4,6 +4,7 @@ import { Button } from '@nutui/nutui-react-taro'
 import { View } from '@tarojs/components'
 
 import { CountActions, CountState, useCountStore } from '@/stores/count.store'
+import React from 'react'
 
 const CartPage = () => {
   const { bears, increasePopulation } = useCountStore((state: CountState & CountActions) => state)
@@ -31,4 +32,4 @@ const CartPage = () => {
 
 
 
-export default CartPage
+export default React.memo(CartPage)

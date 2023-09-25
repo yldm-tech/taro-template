@@ -62,6 +62,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  react-native-safe-area-context:
+    specifier: ^4.7.2
+    version: registry.npmjs.org/react-native-safe-area-context@4.7.2(react@18.2.0)
   react-refresh:
     specifier: ^0.14.0
     version: 0.14.0
@@ -14479,6 +14482,18 @@ packages:
     name: queue-microtask
     version: 1.2.3
     dev: true
+
+  registry.npmjs.org/react-native-safe-area-context@4.7.2(react@18.2.0):
+    resolution: {integrity: sha512-5fy/hRNJ7bI/U2SliOeKf0D80J4lXPc1NsRiNS7Xaz8YTnqlzWib1ViItkwKPfufe54YKzVBMmM32RpdzvO2gg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-4.7.2.tgz}
+    id: registry.npmjs.org/react-native-safe-area-context/4.7.2
+    name: react-native-safe-area-context
+    version: 4.7.2
+    peerDependencies:
+      react: '*'
+      react-native: '*'
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   registry.npmjs.org/readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz}

@@ -1,3 +1,4 @@
+import React from 'react'
 import './index.scss'
 
 import { View } from '@tarojs/components'
@@ -12,4 +13,4 @@ const CategoryPage = () => {
   )
 }
 
-export default CategoryPage
+export default React.memo(CategoryPage)

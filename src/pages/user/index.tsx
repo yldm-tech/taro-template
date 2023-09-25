@@ -4,6 +4,7 @@ import { Avatar } from '@nutui/nutui-react-taro'
 import { View } from '@tarojs/components'
 
 import AvatarPhoto from '@/assets/images/user_default.png'
+import React from 'react'
 
 const UserPage = () => {
   return (
@@ -28,4 +29,4 @@ const UserPage = () => {
   )
 }
 
-export default UserPage
+export default React.memo(UserPage)
