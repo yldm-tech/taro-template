@@ -11,9 +11,13 @@ const IndexPage = () => {
   const { todoList, initialize, addTodo, removeAllTodo } = useTodoStore((state: TodoState & TodoActions) => state)
   useEffect(() => {
     initialize()
-  })
+  }, [])
 
 
+  /**
+   * 显示组件
+   * @returns 
+   */
   const TodoComponent: FunctionComponent = () => {
     fetchDemo()
     return todoList.map((todo: Todo) => {
@@ -25,6 +29,10 @@ const IndexPage = () => {
     })
   }
 
+  /**
+   * 控制器
+   * @returns 
+   */
   const Controls: FunctionComponent = () => {
     const id = todoList.length + 1
     return <View className="index flex flex-col">
@@ -42,6 +50,9 @@ const IndexPage = () => {
     </View>
   }
 
+  /**
+   * render
+   */
   return (
     <View className="nutui-react-demo">
       <View className="index text-sm text-blue-400">
