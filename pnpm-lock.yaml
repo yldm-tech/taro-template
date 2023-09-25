@@ -113,7 +113,7 @@ devDependencies:
     specifier: ^4.4.6
     version: 4.4.6
   '@types/sass':
-    specifier: ^1.45.0
+    specifier: ^1.43.1
     version: registry.npmjs.org/@types/sass@1.45.0
   '@types/webpack-env':
     specifier: ^1.18.1
