@@ -92,8 +92,8 @@ devDependencies:
     specifier: 3.6.17
     version: 3.6.17(@babel/core@7.22.20)(@types/react@18.2.22)(postcss@8.4.30)(prettier@3.0.3)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)(webpack@5.88.2)
   '@types/node':
-    specifier: ^20.6.4
-    version: 20.6.4
+    specifier: ^20.6.5
+    version: registry.npmjs.org/@types/node@20.6.5
   '@types/react':
     specifier: ^18.2.22
     version: 18.2.22
@@ -113,8 +113,8 @@ devDependencies:
     specifier: ^4.4.6
     version: 4.4.6
   '@types/sass':
-    specifier: ^1.43.1
-    version: registry.npmjs.org/@types/sass@1.45.0
+    specifier: 1.43.1
+    version: registry.npmjs.org/@types/sass@1.43.1
   '@types/webpack-env':
     specifier: ^1.18.1
     version: 1.18.1
@@ -189,7 +189,7 @@ devDependencies:
     version: 1.3.4(ts-node@10.9.1)(webpack@5.88.2)
   ts-node:
     specifier: ^10.9.1
-    version: 10.9.1(@types/node@20.6.4)(typescript@5.2.2)
+    version: 10.9.1(@types/node@20.6.5)(typescript@5.2.2)
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -1758,7 +1758,7 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
       '@types/yargs': 15.0.15
       chalk: 4.1.2
     dev: true
@@ -2729,26 +2729,26 @@ packages:
     resolution: {integrity: sha512-oyl4jvAfTGX9Bt6Or4H9ni1Z447/tQuxnZsytsCaExKlmJiU8sFgnIBRzJUpKwB5eWn9HuBYlUlVA74q/yN0eQ==}
     dependencies:
       '@types/connect': 3.4.36
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/bonjour@3.5.11:
     resolution: {integrity: sha512-isGhjmBtLIxdHBDl2xGwUzEM8AOyOvWsADWq7rqirdi/ZQoHnLWErHvsThcEzTX8juDRiZtzp2Qkv5bgNh6mAg==}
     dependencies:
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/connect-history-api-fallback@1.5.1:
     resolution: {integrity: sha512-iaQslNbARe8fctL5Lk+DsmgWOM83lM+7FzP0eQUJs1jd3kBE8NWqBTIT2S8SqQOJjxvt2eyIjpOuYeRXq2AdMw==}
     dependencies:
       '@types/express-serve-static-core': 4.17.37
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/connect@3.4.36:
     resolution: {integrity: sha512-P63Zd/JUGq+PdrM1lv0Wv5SBYeA2+CORvbrXbngriYY0jzLUWfQMQQxOhjONEz/wlHOAxOdY7CY65rgQdTjq2w==}
     dependencies:
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/debug@4.1.9:
@@ -2779,7 +2779,7 @@ packages:
   /@types/express-serve-static-core@4.17.37:
     resolution: {integrity: sha512-ZohaCYTgGFcOP7u6aJOhY9uIZQgZ2vxC2yWoArY+FeDXlqeH66ZVBjgvg+RLVAS/DWNq4Ap9ZXu1+SUQiiWYMg==}
     dependencies:
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
       '@types/qs': 6.9.8
       '@types/range-parser': 1.2.4
       '@types/send': 0.17.1
@@ -2797,14 +2797,14 @@ packages:
   /@types/fs-extra@8.1.3:
     resolution: {integrity: sha512-7IdV01N0u/CaVO0fuY1YmEg14HQN3+EW8mpNgg6NEfxEl/lzCa5OxlBu3iFsCAdamnYOcTQ7oEi43Xc/67Rgzw==}
     dependencies:
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/glob@7.2.0:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/history@4.7.11:
@@ -2822,7 +2822,7 @@ packages:
   /@types/http-proxy@1.17.12:
     resolution: {integrity: sha512-kQtujO08dVtQ2wXAuSFfk9ASy3sug4+ogFR8Kd8UgP8PEuc1/G/8yjYRmp//PcDNJEUKOza/MrQu15bouEUCiw==}
     dependencies:
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/istanbul-lib-coverage@2.0.4:
@@ -2851,7 +2851,7 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/lodash.debounce@4.0.7:
@@ -2887,13 +2887,6 @@ packages:
   /@types/ms@0.7.31:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: true
-
-  /@types/node@15.14.9:
-    resolution: {integrity: sha512-qjd88DrCxupx/kJD5yQgZdcYKZKSIGBVDIBE1/LTGcNm3d2Np/jxojkdePDdfnBHJc5W7vSMpbJ1aB7p/Py69A==}
-    dev: true
-
-  /@types/node@20.6.4:
-    resolution: {integrity: sha512-nU6d9MPY0NBUMiE/nXd2IIoC4OLvsLpwAjheoAeuzgvDZA1Cb10QYg+91AF6zQiKWRN5i1m07x6sMe0niBznoQ==}
 
   /@types/normalize-package-data@2.4.2:
     resolution: {integrity: sha512-lqa4UEhhv/2sjjIQgjX8B+RBjj47eo0mzGasklVJ78UKGQY1r0VpB9XHDaZZO9qzEFDdy4MrXLuEaSmPrPSe/A==}
@@ -2963,7 +2956,7 @@ packages:
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/retry@0.12.0:
@@ -2981,7 +2974,7 @@ packages:
     resolution: {integrity: sha512-Cwo8LE/0rnvX7kIIa3QHCkcuF21c05Ayb0ZfxPiv0W8VRiZiNW/WuRupHKpqqGVGf7SUA44QSOUKaEd9lIrd/Q==}
     dependencies:
       '@types/mime': 1.3.2
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/serve-index@1.9.1:
@@ -2995,20 +2988,20 @@ packages:
     dependencies:
       '@types/http-errors': 2.0.2
       '@types/mime': 3.0.1
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/sockjs@0.3.33:
     resolution: {integrity: sha512-f0KEEe05NvUnat+boPTZ0dgaLZ4SfSouXUgv5noUiefG2ajgKjmETo9ZJyuqsl7dfl2aHlLJUiki6B4ZYldiiw==}
     dependencies:
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/vinyl@2.0.7:
     resolution: {integrity: sha512-4UqPv+2567NhMQuMLdKAyK4yzrfCqwaTt6bLhHEs8PFcxbHILsrxaY63n4wgE/BRLDWDQeI+WcTmkXKExh9hQg==}
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/webpack-env@1.18.1:
@@ -3018,7 +3011,7 @@ packages:
   /@types/ws@8.5.5:
     resolution: {integrity: sha512-lwhs8hktwxSjf9UaZ9tG5M03PGogvFaH8gUgLNbN9HKIg0dvv6q+gkSuJ8HN4/VbyxkuLzCjlN7GquQ0gUJfIg==}
     dependencies:
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   /@types/yargs-parser@21.0.0:
@@ -7834,7 +7827,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
       merge-stream: registry.npmjs.org/merge-stream@2.0.0
       supports-color: 8.1.1
 
@@ -8422,7 +8415,7 @@ packages:
     resolution: {integrity: sha512-GftCCBs6EN8sz3BoWO1bCj8t7YBtT713d8bUgbhg9Iel5kFSqnSvCK06TYIDJAtJ51cSiWkM/YemlT0dfoFycw==}
     engines: {node: '>=12'}
     dependencies:
-      '@types/node': 15.14.9
+      '@types/node': registry.npmjs.org/@types/node@15.14.9
       '@types/vinyl': 2.0.7
       vinyl: 2.2.1
       vinyl-file: 3.0.0
@@ -9501,7 +9494,7 @@ packages:
     dependencies:
       lilconfig: 2.1.0
       postcss: 8.4.30
-      ts-node: 10.9.1(@types/node@20.6.4)(typescript@5.2.2)
+      ts-node: 10.9.1(@types/node@20.6.5)(typescript@5.2.2)
       yaml: 2.3.2
     dev: true
 
@@ -10671,7 +10664,7 @@ packages:
       '@types/fs-extra': 8.1.3
       '@types/glob': 7.2.0
       '@types/lodash.debounce': 4.0.7
-      '@types/sass': registry.npmjs.org/@types/sass@1.45.0
+      '@types/sass': registry.npmjs.org/@types/sass@1.43.1
       archy: 1.0.0
       chalk: 3.0.0
       chokidar: registry.npmjs.org/chokidar@3.5.3
@@ -11730,7 +11723,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-node@10.9.1(@types/node@20.6.4)(typescript@5.2.2):
+  /ts-node@10.9.1(@types/node@20.6.5)(typescript@5.2.2):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -11749,7 +11742,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.6.4
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
       acorn: 8.10.0
       acorn-walk: 8.2.0
       arg: 4.1.3
@@ -13116,13 +13109,23 @@ packages:
     dev: true
     optional: true
 
-  registry.npmjs.org/@types/sass@1.45.0:
-    resolution: {integrity: sha512-jn7qwGFmJHwUSphV8zZneO3GmtlgLsmhs/LQyVvQbIIa+fzGMUiHI4HXJZL3FT8MJmgXWbLGiVVY7ElvHq6vDA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/sass/-/sass-1.45.0.tgz}
+  registry.npmjs.org/@types/node@15.14.9:
+    resolution: {integrity: sha512-qjd88DrCxupx/kJD5yQgZdcYKZKSIGBVDIBE1/LTGcNm3d2Np/jxojkdePDdfnBHJc5W7vSMpbJ1aB7p/Py69A==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/node/-/node-15.14.9.tgz}
+    name: '@types/node'
+    version: 15.14.9
+    dev: true
+
+  registry.npmjs.org/@types/node@20.6.5:
+    resolution: {integrity: sha512-2qGq5LAOTh9izcc0+F+dToFigBWiK1phKPt7rNhOqJSr35y8rlIBjDwGtFSgAI6MGIhjwOVNSQZVdJsZJ2uR1w==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/node/-/node-20.6.5.tgz}
+    name: '@types/node'
+    version: 20.6.5
+
+  registry.npmjs.org/@types/sass@1.43.1:
+    resolution: {integrity: sha512-BPdoIt1lfJ6B7rw35ncdwBZrAssjcwzI5LByIrYs+tpXlj/CAkuVdRsgZDdP4lq5EjyWzwxZCqAoFyHKFwp32g==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/sass/-/sass-1.43.1.tgz}
     name: '@types/sass'
-    version: 1.45.0
-    deprecated: This is a stub types definition. sass provides its own type definitions, so you do not need this installed.
+    version: 1.43.1
     dependencies:
-      sass: registry.npmjs.org/sass@1.68.0
+      '@types/node': registry.npmjs.org/@types/node@20.6.5
     dev: true
 
   registry.npmjs.org/ajv@8.12.0:
